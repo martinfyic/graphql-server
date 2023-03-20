@@ -16,17 +16,17 @@ class ProductsService {
 	}
 
 	async createProduct(product) {
-		const createProduct = await this.productsDao.oneProduct(product);
+		const createProduct = await this.productsDao.createProduct(product);
 		return createProduct;
 	}
 
 	async updateProduct(id, product) {
-		const updateProduct = await this.productsDao.oneProduct(id, product);
+		const updateProduct = await this.productsDao.updateProduct(id, product);
 		return updateProduct;
 	}
 
 	async deleteProduct(id) {
-		const deleteProduct = await this.productsDao.oneProduct(id);
+		const deleteProduct = await this.productsDao.deleteProduct(id);
 		return deleteProduct;
 	}
 }
