@@ -1,0 +1,26 @@
+{
+	"name": "graphql-server",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "Desafio clase 44",
+	"main": "src/app.js",
+	"scripts": {
+		"start": "node src/app.js",
+		"dev": "node --watch --trace-warnings src/app.js",
+		"devmon": "nodemon src/app.js"
+	},
+	"keywords": [],
+	"author": "Martin Ferreira Yic",
+	"license": "ISC",
+	"dependencies": {
+		"cors": "2.8.5",
+		"dotenv": "16.0.3",
+		"express": "4.18.2",
+		"express-graphql": "0.12.0",
+		"graphql": "16.6.0",
+		"mongoose": "7.0.2"
+	},
+	"devDependencies": {
+		"nodemon": "2.0.21"
+	}
+}
