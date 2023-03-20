@@ -16,16 +16,14 @@ app.use(
 );
 
 app.get('/', (req, res) => {
-	res.send('PROBANDO CONECTION');
+	res.send('<h1> PROBANDO CONECTION ✅ </h1>');
 });
 
-dbConnect()
-	.then(console.log(`===> 🚀 Conectado a DB`))
-	.catch(err => console.log(`⚠️ Error en DB ===> ${err}`));
+dbConnect();
 
 const server = app.listen(PORT, () => {
 	console.log(
-		`===> ✨ Servidor en funcionamiento http://localhost:${PORT} at ${new Date().toLocaleString()} ✨ `
+		`===> ✨ Servidor en funcionamiento 💻 http://localhost:${PORT} - ⌚ - ${new Date().toLocaleString()} ✨ `
 	);
 });
 server.on('error', err => console.log(err));
