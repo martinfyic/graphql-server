@@ -3,6 +3,10 @@ import express from 'express';
 import { graphqlHTTP } from 'express-graphql';
 import cors from 'cors';
 import { dbConnect } from './config/MongoDB.js';
+import { schema } from './graphql/schema.js';
+import ProductController from './controller/productController.js';
+
+const api = new ProductController();
 
 const PORT = process.env.PORT || 8080;
 const app = express();
@@ -12,6 +16,20 @@ app.use(
 	cors({
 		origin: '*',
 		methods: 'GET, POST, PUT, DELETE, OPTIONS',
+	})
+);
+app.use(
+	'/graphql',
+	graphqlHTTP({
+		schema: schema,
+		rootValue: {
+			allProducts: api.allProducts,
+			oneProduct: api.oneProduct,
+			createProduct: api.createProduct,
+			deleteProduct: api.deleteProduct,
+			updateProduct: api.updateProduct,
+		},
+		graphiql: true,
 	})
 );
 
