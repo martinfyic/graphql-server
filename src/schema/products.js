@@ -8,7 +8,7 @@ const productsSchema = mongoose.Schema(
 		description: String,
 		stock: Number,
 	},
-	{ timestamps: true, versionKey: false }
+	{ versionKey: false }
 );
 
 const productsModel = mongoose.model('products', productsSchema);
