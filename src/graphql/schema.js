@@ -2,7 +2,7 @@ export const typeDef = `
 
   type Query {
     allProducts: [Product]
-    oneProduct: Product
+    oneProduct(id: ID!): Product
   }
 
   type Mutation {
