@@ -110,21 +110,20 @@ query {
 
 2. Obtener un producto seleccionado
 
-```
+```graphql
 query {
-  oneProduct( id: "641bac3619b2e16332903413") {
-    _id
-    title
-    price
-    thumbnail
-    description
-    stock
-
-  }
+	oneProduct(id: "641bac3619b2e16332903413") {
+		_id
+		title
+		price
+		thumbnail
+		description
+		stock
+	}
 }
 ```
 
-```
+```graphql
 {
   "data": {
     "oneProduct": {
@@ -141,15 +140,17 @@ query {
 
 3. Crear un producto
 
-```
+```graphql
 mutation {
- 	createProduct(input: {
-		title: "prueba4",
-		price: 1023,
-		thumbnail: "localhost/coso.com",
-		description: "lorem input serff cosa del mardela vidaquepasa",
-		stock: 45,
-	}) {
+	createProduct(
+		input: {
+			title: "prueba4"
+			price: 1023
+			thumbnail: "localhost/coso.com"
+			description: "lorem input serff cosa del mardela vidaquepasa"
+			stock: 45
+		}
+	) {
 		_id
 		title
 		stock
@@ -157,7 +158,7 @@ mutation {
 }
 ```
 
-```
+```graphql
 {
   "data": {
     "createProduct": {
@@ -171,15 +172,18 @@ mutation {
 
 4. Actualizar un producto
 
-```
+```graphql
 mutation {
-	updateProduct(id: "641ce4a4c4d5a99a01e58567", input: {
-		title: "Update",
-		price: 999,
-		thumbnail: "localhost/coso.com",
-		description: "lorem input serff cosa del mardela vidaquepasa",
-		stock: 45,
-	}) {
+	updateProduct(
+		id: "641ce4a4c4d5a99a01e58567"
+		input: {
+			title: "Update"
+			price: 999
+			thumbnail: "localhost/coso.com"
+			description: "lorem input serff cosa del mardela vidaquepasa"
+			stock: 45
+		}
+	) {
 		_id
 		title
 		stock
@@ -187,7 +191,7 @@ mutation {
 }
 ```
 
-```
+```graphql
 {
   "data": {
     "updateProduct": {
@@ -201,17 +205,17 @@ mutation {
 
 5. Eliminar un producto
 
-```
+```graphql
 mutation {
-	deleteProduct(id:"641ce4a4c4d5a99a01e58567"){
-    _id
-    title
-    stock
-  }
+	deleteProduct(id: "641ce4a4c4d5a99a01e58567") {
+		_id
+		title
+		stock
+	}
 }
 ```
 
-```
+```graphql
 {
   "data": {
     "deleteProduct": {
