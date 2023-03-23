@@ -1,6 +1,4 @@
-import { buildSchema } from 'graphql';
-
-export const schema = buildSchema(`
+export const typeDef = `
 
   type Query {
     allProducts: [Product]
@@ -29,4 +27,4 @@ export const schema = buildSchema(`
     description: String
     stock: Int
   }
-`);
+`;
