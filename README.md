@@ -26,6 +26,6 @@ Para ejecutar este proyecto, deberás agregar las siguientes variables de entorn
 - [express-graphql](https://graphql.org/graphql-js/express-graphql/): 0.12.0
 - [graphql](https://graphql.org/): 16.6.0
 - [@graphql-tools/schema](https://the-guild.dev/graphql/tools): 9.0.17
-- [mongoose](<[https://](https://mongoosejs.com/)>): 7.0.2
+- [mongoose](https://mongoosejs.com/): 7.0.2
 - [cors](https://github.com/expressjs/cors): 2.8.5
 - [dotenv](https://github.com/motdotla/dotenv): 16.0.3
