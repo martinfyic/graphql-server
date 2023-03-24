@@ -29,7 +29,7 @@ dbConnect();
 
 const server = app.listen(PORT, () => {
 	console.log(
-		`===> ✨ Servidor en funcionamiento 💻 http://localhost:${PORT} - ⌚ - ${new Date().toLocaleString()} ✨ `
+		`===> ✨ Servidor en funcionamiento 💻 http://localhost:${PORT}/graphql - ⌚ - ${new Date().toLocaleString()} ✨ `
 	);
 });
 server.on('error', err => console.log(err));
