@@ -67,44 +67,44 @@ query {
 }
 ```
 
-```graphql
+```json
 {
-  "data": {
-    "allProducts": [
-      {
-        "_id": "641babc51c453b85612a183a",
-        "title": null,
-        "description": null,
-        "thumbnail": null,
-        "price": null,
-        "stock": null
-      },
-      {
-        "_id": "641bac3619b2e16332903413",
-        "title": "prueba",
-        "description": "lorem input serff cosa del mardela vidaquepasa",
-        "thumbnail": "localhost/coso.com",
-        "price": 2000,
-        "stock": 34
-      },
-      {
-        "_id": "641bad4d94cab21503bfa1fb",
-        "title": "prueba2",
-        "description": "lorem input serff cosa del mardela vidaquepasa",
-        "thumbnail": "localhost/coso.com",
-        "price": 3455,
-        "stock": 34
-      },
-      {
-        "_id": "641bad6c94cab21503bfa1fd",
-        "title": "prueba3",
-        "description": "lorem input serff cosa del mardela vidaquepasa",
-        "thumbnail": "localhost/coso.com",
-        "price": 3455,
-        "stock": 4
-      }
-    ]
-  }
+	"data": {
+		"allProducts": [
+			{
+				"_id": "641babc51c453b85612a183a",
+				"title": null,
+				"description": null,
+				"thumbnail": null,
+				"price": null,
+				"stock": null
+			},
+			{
+				"_id": "641bac3619b2e16332903413",
+				"title": "prueba",
+				"description": "lorem input serff cosa del mardela vidaquepasa",
+				"thumbnail": "localhost/coso.com",
+				"price": 2000,
+				"stock": 34
+			},
+			{
+				"_id": "641bad4d94cab21503bfa1fb",
+				"title": "prueba2",
+				"description": "lorem input serff cosa del mardela vidaquepasa",
+				"thumbnail": "localhost/coso.com",
+				"price": 3455,
+				"stock": 34
+			},
+			{
+				"_id": "641bad6c94cab21503bfa1fd",
+				"title": "prueba3",
+				"description": "lorem input serff cosa del mardela vidaquepasa",
+				"thumbnail": "localhost/coso.com",
+				"price": 3455,
+				"stock": 4
+			}
+		]
+	}
 }
 ```
 
@@ -123,18 +123,18 @@ query {
 }
 ```
 
-```graphql
+```json
 {
-  "data": {
-    "oneProduct": {
-      "_id": "641bac3619b2e16332903413",
-      "title": "prueba",
-      "price": 2000,
-      "thumbnail": "localhost/coso.com",
-      "description": "lorem input serff cosa del mardela vidaquepasa",
-      "stock": 34
-    }
-  }
+	"data": {
+		"oneProduct": {
+			"_id": "641bac3619b2e16332903413",
+			"title": "prueba",
+			"price": 2000,
+			"thumbnail": "localhost/coso.com",
+			"description": "lorem input serff cosa del mardela vidaquepasa",
+			"stock": 34
+		}
+	}
 }
 ```
 
@@ -158,15 +158,15 @@ mutation {
 }
 ```
 
-```graphql
+```json
 {
-  "data": {
-    "createProduct": {
-      "_id": "641ce4a4c4d5a99a01e58567",
-      "title": "prueba4",
-      "stock": 45
-    }
-  }
+	"data": {
+		"createProduct": {
+			"_id": "641ce4a4c4d5a99a01e58567",
+			"title": "prueba4",
+			"stock": 45
+		}
+	}
 }
 ```
 
@@ -191,15 +191,15 @@ mutation {
 }
 ```
 
-```graphql
+```json
 {
-  "data": {
-    "updateProduct": {
-      "_id": "641ce4a4c4d5a99a01e58567",
-      "title": "Update",
-      "stock": 45
-    }
-  }
+	"data": {
+		"updateProduct": {
+			"_id": "641ce4a4c4d5a99a01e58567",
+			"title": "Update",
+			"stock": 45
+		}
+	}
 }
 ```
 
@@ -215,14 +215,14 @@ mutation {
 }
 ```
 
-```graphql
+```json
 {
-  "data": {
-    "deleteProduct": {
-      "_id": "641ce4a4c4d5a99a01e58567",
-      "title": "Update",
-      "stock": 45
-    }
-  }
+	"data": {
+		"deleteProduct": {
+			"_id": "641ce4a4c4d5a99a01e58567",
+			"title": "Update",
+			"stock": 45
+		}
+	}
 }
 ```
